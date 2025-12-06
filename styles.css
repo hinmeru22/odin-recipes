@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, system-ui, Arial, sans-serif;
+}
+body {
+  background-color: hsla(0, 0%, 50%, 0.15);
+}
+.main #home {
+  margin: 8px;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 8px hsla(0, 0%, 0%, 0.2);
+  transition: width 0.2s ease, height 0.2s ease;
+}
+.main #home:hover {
+  width: 45px;
+  height: 45px;
+}
+.main #home a {
+  color: tomato;
+  font-size: 28px;
+  font-weight: bold;
+}
+li {
+  list-style-type: none;
+}
+li a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: tomato;
+}
+li a:hover {
+  color: hsl(9, 100%, 54%);
+}
+span {
+  font-size: 18px;
+  margin: 8px 0;
+}
+a {
+  text-decoration: none;
+}
+.main {
+  height: 100vh;
+}
+.main .card-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+}
+.main .card-section .card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .card-section .card-container .card-nav-container {
+  display: flex;
+  background-color: white;
+  border-radius: 6px;
+  margin-top: 8px;
+  box-shadow: 2px 2px 12px hsl(0, 0%, 0%, 0.2);
+}
+.main .card-section .card-container .card-nav-container li {
+  margin: 8px 14px;
+}
+.main .card-section .card-container .card-nav-container li img {
+  width: 320px;
+  height: 320px;
+  border-radius: 4px;
+}
+.main .card-section .card-nav-credits {
+  margin: 20px 0;
+  font-size: 24px;
+}
+.main .home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .home-container .home-card {
+  padding: 20px;
+  max-width: 450px;
+  background-color: hsl(9, 100%, 75%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+}
+.main .home-container .home-ingredients {
+  margin: 14px auto;
+  padding: 20px;
+  width: 450px;
+  background-color: hsl(9, 100%, 75%);
+  border-radius: 8px;
+}
+.main .home-container .home-steps {
+  margin: 0 14px 14px 14px;
+  padding: 20px;
+  max-width: 100%;
+  background-color: hsl(9, 100%, 75%);
+  border-radius: 8px;
+}
+.main .home-container .home-steps ol {
+  padding: 20px;
+}
+.main .home-container .home-steps ol li {
+  list-style-type: numeric;
+  margin: 14px auto;
+}
+.main .home-container .home-ingredients h2 {
+  margin: 8px auto;
+}
+.main .home-container .home-ingredients ul li {
+  list-style-type: disc;
+  margin: 14px 20px;
+}
+.main .home-container dd {
+  margin: 8px auto;
+}
+.main .home-container h1 {
+  margin: 8px auto;
+}
+.main .home-container img {
+  margin: 8px auto;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 394px) {
+  .main .card-section .card-container .card-nav-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    margin-top: 8px;
+    box-shadow: 2px 2px 12px hsl(0, 0%, 0%, 0.2);
+  }
+  .main .home-container .home-card {
+    max-width: 370px;
+    font-size: 20px;
+  }
+  .main .home-container .home-card img {
+    max-width: 300px;
+    max-height: auto;
+  }
+  .main .home-container .home-ingredients {
+    font-size: 20px;
+    max-width: 370px;
+  }
+  .main .home-container .home-steps {
+    font-size: 20px;
+    max-width: 370px;
+  }
+}
